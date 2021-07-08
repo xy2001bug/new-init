@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import { Breadcrumb, BreadcrumbItem, Message, DatePicker, Pagination, Loading, Button, Tooltip, Select, Option, Tabs, TabPane } from 'element-ui'
+import { Input, Breadcrumb, BreadcrumbItem, Message, DatePicker, Pagination, Loading, Button, Tooltip, Select, Option, Tabs, TabPane, Carousel, CarouselItem } from 'element-ui'
+Vue.use(Input)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
 Vue.use(DatePicker)
@@ -11,4 +12,6 @@ Vue.use(Select)
 Vue.use(Option)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Carousel)
+Vue.use(CarouselItem)
 Vue.prototype.$message = Message

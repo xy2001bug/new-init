@@ -4,16 +4,29 @@ html,body{
     padding: 0;
     margin: 0;
     font-family: PingFangSC-Regular, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    min-width: 1200px;
+    color: #333;
+}
+// 版心布局
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
 }
 // 面包屑样式
 .hander{
     display: flex;
     align-items: center;
     height: 50px;
-    color: #606266;
+    color: #999;
     .el-breadcrumb__inner.is-link{
-        color: #606266;
+        color: #999;
         font-weight: normal;
+    }
+    .el-breadcrumb__inner{
+        color: #999;
+    }
+    .el-breadcrumb__item:last-child .el-breadcrumb__inner{
+        color: #999;
     }
     .bread_txt{
         margin-right: 10px;
@@ -39,19 +52,19 @@ html,body{
         // }
     }
     .pt_pagination .el-pagination.is-background .el-pager li:not(.disabled):hover {
-        /* // color: #fff;
-        // background-color: $mainColor;
-        // border: none; */
-        color: $mainColor;
-        border: 1px solid $mainColor;
+        color: #fff;
+        background-color: $mainColor;
+        border: none; 
+        /*color: $mainColor;
+        border: 1px solid $mainColor;*/
     }
     .pt_pagination .el-pagination.is-background .el-pager li:not(.disabled).active {
-        /* // background-color: $mainColor;
-        // color: #fff;
-        // border: none; */
-        background-color: #fff;
+        background-color: $mainColor;
+        color: #fff;
+        border: none;
+        /*background-color: #fff;
         color: $mainColor;
-        border: 1px solid $mainColor;
+        border: 1px solid $mainColor;*/
         display: inline-block;
     }
     .pt_pagination .el-pagination button, .pt_pagination .el-pagination span:not([class*=suffix]){
@@ -91,4 +104,23 @@ html,body{
             margin-left: 10px;
         }
     }
+}
+/* 去掉input样式 */
+input{
+    outline:none;
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #E8E5F1;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C4C4C4;
+    font-size: 14px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C4C4C4;
+    font-size: 14px;
+}
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #C4C4C4;
+    font-size: 14px;
 }
